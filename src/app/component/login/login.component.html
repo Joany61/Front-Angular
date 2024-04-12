@@ -1,0 +1,17 @@
+<h1>Wellcome to {{title}}</h1>
+<div id="login-container">
+  <h1>LOGIN</h1>
+  <p> {{loginForm.status}}</p>
+  <div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="username">Username: </label>
+      <input type="text" formControlName="username" id="username">
+
+      <label for="password">Password: </label>
+      <input type="text" formControlname="password" id="password">
+
+      <p>Complete the form to enable button</p>
+      <button type="submit" [disabled]="!loginForm.valid" routerLink="/dashboard">Submit</button>
+    </form>
+  </div>
+</div>
