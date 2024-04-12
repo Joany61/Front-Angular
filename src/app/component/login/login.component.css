@@ -1,3 +1,18 @@
-#login-container{
-    
+.login-container{
+    text-align: center;
+}
+
+#form-container{
+    margin: auto;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+#form-container form{
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+    margin: auto;
 }
