@@ -14,5 +14,5 @@ import { MaterialModule } from '../_module/material.module';
   schemas: []   // here are what is needed to be accessed explecitly
 })
 export class AppComponent {
-  title = 'SNMpy';
+  
 }
